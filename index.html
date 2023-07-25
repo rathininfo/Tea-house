@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- font awesome link -->
+    <script src="https://kit.fontawesome.com/7472c29f3c.js" crossorigin="anonymous"></script>
 
     <style>
         .font-Manrope{
@@ -19,50 +21,69 @@
     </style>
 </head>
 <body class="font-Manrope">
-    <header>
+    <header class="max-w-screen-xl m-auto">
         <!-- start nav section -->
-        <nav>
-            <div class="navbar bg-base-100">
-                <div class="">
-                  <div class="dropdown">
-                    <label tabindex="0" class="btn btn-ghost lg:hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                    </label>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                      <li><a>Item 1</a></li>
-                      <li>
-                        <a>Parent</a>
-                        <ul class="p-2">
-                          <li><a>Submenu 1</a></li>
-                          <li><a>Submenu 2</a></li>
-                        </ul>
-                      </li>
-                      <li><a>Item 3</a></li>
-                    </ul>
-                  </div>
-                  <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
-                </div>
-                <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1">
-                    <li><a>Item 1</a></li>
-                    <li tabindex="0">
-                      <details>
-                        <summary>Parent</summary>
-                        <ul class="p-2">
-                          <li><a>Submenu 1</a></li>
-                          <li><a>Submenu 2</a></li>
-                        </ul>
-                      </details>
-                    </li>
-                    <li><a>Item 3</a></li>
-                  </ul>
-                </div>
-                <div class="">
-                  <a class="btn">Button</a>
-                </div>
+        <nav class="mb-32">
+          <div class="flex flex-wrap md:flex-wrap lg:flex-row items-center ">
+            <div class="flex-1">
+              <div class="dropdown">
+                <label tabindex="0" class="lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </label>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Home</a></li>
+                  <li><a>Shop</a></li>
+                  <li><a>news</a></li>
+                  <li><a>contact</a></li>
+                </ul>
               </div>
+              <a class="text-3xl font-bold ml-5 lg:m-0">Tea House</a>
+            </div>
+        
+            <div class="hidden lg:flex ">
+              <ul class="menu menu-horizontal px-1 text-lg font-base">
+                <li><a>Home</a></li>
+                <li><a>Shop</a></li>
+                <li><a>News</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+        
+            <div class="">
+              <a class=" py-3 px-8 rounded-md bg-green-500 text-[#ffffff] ">Sing UP</a>
+            </div>
+          </div>
         </nav>
         <!-- end nav section -->
+        <!-- start banner section -->
+        <section>
+          <div class="flex justify-between items-center flex-col lg:flex-row">
+            <div class="space-y-7">
+              <h1 class="text-7xl font-bold font-Manrope leading-[100px]">It's good<br> 
+                tea time at The <br> Tea House</h1>
+              <p class="">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.</p>
+              <button class="btn btn-primary">Explore More</button>
+            </div>
+            <div>
+              <img src="images/banner.png" class="max-w-lg rounded-lg " />
+              <div>
+
+                <div class=" flex justify-center items-center gap-4 w-52 p-3 drop-shadow-lg bg-base-100 rounded-box -mt-24 ">
+                  <div>
+                    <i class="fa-solid fa-star text-yellow-500 text-3xl"></i>
+                  </div>
+                  <div>
+                    <h3 class="font-bold text-3xl">5.00</h3>
+                  <p class="font-bold text-sm">Trust Pilot Ratings</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End banner section -->
+
     </header>
     
 </body>
